@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card login form">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-group">
+          <label for="inUsr">Email</label>
+          <input type="text" id="inUsr" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="inPass">Password</label>
+          <input type="password" id="inPass" placeholder="Enter your password">
+        </div>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <input type="button" class="button loginbtn" value="Login">
+      </form>
+      <a href="#signup" class="link">Don’t have an account? Join here</a>
+    </div>
+    <div class="card registration form">
+      <h2>Signup</h2>
+      <form action="#">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password">
+        </div>
+        <input type="button" class="button signupbtn" value="Signup">
+      </form>
+      <p href="#login" class="link">Already having an account?</p>
+    </div>
+    <div class="card forgot form">
+      <h2>Forgot Password</h2>
+      <form action="#">
+        <div class="input-group">
+          <label for="forgotinp">Email</label>
+          <input type="text" id="forgotinp" placeholder="Enter your email">
+        </div>
+        <input type="button" class="button forgotbtn" value="Submit">
+      </form>
+      <a href="#login" class="link">Remembered your password?</a>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="page0.js" type="module"></script>
+</body>
+</html>
